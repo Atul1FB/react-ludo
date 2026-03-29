@@ -1,10 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
+import Board from '../components/Board';
+import About from '../components/About';
+import Contact from '../components/Contact';
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#e8fff7] via-[#d0f5e8] to-[#c2f0e0]">
+    <div className=" min-h-screen bg-gradient-to-br from-[#e8fff7] via-[#d0f5e8] to-[#c2f0e0]">
 
       <Navbar />
 
@@ -74,6 +77,9 @@ function Home() {
 
       {/* Cards */}
       <Card />
+      <Contact/>
+      {/* <Board/> */}
+      <About/>
 
     </div>
   );
