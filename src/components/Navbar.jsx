@@ -12,10 +12,10 @@ function Navbar() {
           {/* Logo */}
           <div 
           className=" text-[2rem] font-fredoka font-bold text-2xl text-[#e03a3a] tracking-widest select-none">
-            <span className="  inline-block transition-transform duration-200 hover:-rotate-2 hover:-translate-y-0.5">L</span>
-            <span className="inline-block transition-transform duration-200 hover:-translate-y-1">U</span>
-            <span className="inline-block transition-transform duration-200 hover:rotate-1 hover:-translate-y-0.5">D</span>
-            <span className="inline-block transition-transform duration-200 hover:-translate-y-1">O</span>
+            <span className="  inline-block transition-transform duration-100 hover:-rotate-2 hover:-translate-y-3">L</span>
+            <span className="inline-block transition-transform duration-100 hover:-translate-y-4">U</span>
+            <span className="inline-block transition-transform duration-100 hover:rotate-1 hover:-translate-y-3">D</span>
+            <span className="inline-block transition-transform duration-100 hover:-translate-y-4">O</span>
           </div>
 
           {/* Desktop Links */}

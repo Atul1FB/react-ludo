@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from 'react';
+import React  from 'react';
 
 const modes = [
   { label: 'LUDO KING MANUAL', emoji: '📖', desc: 'Learn the rules' },
@@ -10,6 +11,7 @@ const modes = [
 ];
 
 function Card() {
+  
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto px-4 py-5">
       {modes.map((mode, i) => (
@@ -31,7 +33,7 @@ function Card() {
           "
         >
           {/* Shine overlay */}
-          <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_at_60%_20%,rgba(255,255,255,0.4),transparent_65%)] pointer-events-none" />
+          <div className="absolute inset-2 rounded-9xl bg-[radial-gradient(ellipse_at_60%_20%,rgba(255,255,255,0.4),transparent_65%)] pointer-events-none" />
 
           {/* Corner pips */}
           <span className="absolute top-2 left-2.5 w-2 h-2 rounded-full bg-[#0e4d32]/15" />
@@ -40,17 +42,20 @@ function Card() {
           <span className="absolute bottom-2 right-2.5 w-2 h-2 rounded-full bg-[#0e4d32]/15" />
 
           {/* Emoji */}
-          <span className="text-3xl leading-none group-hover:scale-125 group-hover:-rotate-6 transition-transform duration-200 z-10">
+          <span className="text-3xl leading-none group-hover:scale-125 group-hover:-rotate-6 
+                   transition-transform duration-200 z-10">
             {mode.emoji}
           </span>
 
           {/* Label */}
-          <span className="z-10 text-center text-[#0e4d32] font-extrabold text-xs tracking-widest leading-tight">
+          <span className="z-10 text-center text-[#0e4d32] font-extrabold text-xs 
+                    tracking-widest leading-tight">
             {mode.label}
           </span>
 
           {/* Desc — fades in on hover */}
-          <span className="z-10 text-[#3d8c68] text-[0.65rem] font-bold text-center opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
+          <span className="z-10 text-[#3d8c68] text-[0.65rem] font-bold text-center 
+                    opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
             {mode.desc}
           </span>
         </button>

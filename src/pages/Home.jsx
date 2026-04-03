@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
-import Board from '../components/Board';
+// import Board from '../components/Borad';
 import About from '../components/About';
 import Contact from '../components/Contact';
 
@@ -78,7 +78,8 @@ function Home() {
       {/* Cards */}
       <Card />
       <Contact/>
-      {/* <Board/> */}
+       {/* <Board/>  */}
+
       <About/>
 
     </div>
