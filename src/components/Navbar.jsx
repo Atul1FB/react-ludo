@@ -5,8 +5,8 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="m-2 mt-2 ">
-      <div className="relative bg-gradient-to-br from-[#d4f7ed] via-[#b8f5e0] to-[#a0edd4] rounded-2xl shadow-md border border-white/70 overflow-hidden">
+    <nav className=" mt-1">
+      <div className="relative bg-gradient-to-br from-[#d4f7ed] via-[#b8f5e0] to-[#a0edd4] rounded-2xl shadow-md border border-white/90 overflow-hidden">
         <div className="flex items-center justify-between px-6 py-3 relative z-10">
 
           {/* Logo */}

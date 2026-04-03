@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import React  from 'react';
 
@@ -13,6 +14,16 @@ const modes = [
 function Card() {
   
   return (
+    <div className='bg-gradient-to-br from-[#e8fff7] via-[#d0f5e8] to-[#c2f0e0]'>
+      
+      {/* Section Heading */} 
+      <div className="text-center px-9 pt-10 pb-2"> 
+        <h2 className="text-xl sm:text-2xl font-extrabold text-[#0e4d32] tracking-wide"> 
+          Choose Your Game Mode </h2>
+           <p className="text-sm text-[#3d8c68] font-semibold mt-1">
+             Pick a mode and jump right in </p> 
+             </div>
+    
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto px-4 py-5">
       {modes.map((mode, i) => (
         <button
@@ -60,6 +71,7 @@ function Card() {
           </span>
         </button>
       ))}
+    </div>
     </div>
   );
 }

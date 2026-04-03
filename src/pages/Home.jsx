@@ -1,19 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Card from '../components/Card';
-// import Board from '../components/Borad';
-import About from '../components/About';
-import Contact from '../components/Contact';
 
 function Home() {
   return (
-    <div className=" min-h-screen bg-gradient-to-br from-[#e8fff7] via-[#d0f5e8] to-[#c2f0e0]">
-
-      <Navbar />
+    <div className=" py-10  min-h-screen bg-gradient-to-br from-[#e8fff7] via-[#d0f5e8] to-[#c2f0e0]">
 
       {/* Hero Section */}
-      <div className=" max-w-4xl mx-auto mt-6 px-9">
-        <div className="
+      <div className=" max-w-4xl mx-auto max-h-max py-10 px-9">
+        <div className="py-10
           relative flex flex-col sm:flex-row items-center justify-between gap-4
           bg-gradient-to-br from-[#1a7a50] to-[#0e5c38]
           rounded-2xl px-6 py-6 sm:px-8
@@ -26,7 +19,8 @@ function Home() {
           <div className="absolute -bottom-16 left-1/4 w-56 h-56 bg-white/12 rounded-full pointer-events-none" />
 
           {/* Dice */}
-          <span className=" sm:block absolute right-28 top-1/2  -translate-x-2/2 -translate-y-1/2 text-8xl opacity-60 select-none pointer-events-none">
+          <span className=" sm:block absolute right-28 top-1/2 
+           -translate-x-2/2 -translate-y-1/2 text-8xl opacity-60 select-none pointer-events-none">
             🎲
           </span>
 
@@ -65,22 +59,11 @@ function Home() {
         </div>
       </div>
 
-      {/* Section Heading */}
-      <div className="text-center px-9 pt-10 pb-2">
-        <h2 className="text-xl sm:text-2xl font-extrabold text-[#0e4d32] tracking-wide">
-          Choose Your Game Mode
-        </h2>
-        <p className="text-sm text-[#3d8c68] font-semibold mt-1">
-          Pick a mode and jump right in
-        </p>
-      </div>
+     
+
 
       {/* Cards */}
-      <Card />
-      <Contact/>
-       {/* <Board/>  */}
-
-      <About/>
+     
 
     </div>
   );
